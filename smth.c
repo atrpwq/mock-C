@@ -14,9 +14,9 @@ int mock(char input[]){
 			printf("%c",tolower(input[i]));
 		}
 	}
-	printf("\n");
 }
 void main(){
-	char text[] = "hi how are ya";
+	char text[8192];
+	fgets(text,8192,stdin);
 	mock(text);
 }
